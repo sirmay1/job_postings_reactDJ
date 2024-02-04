@@ -8,3 +8,7 @@ class Jobs(models.Model):
         return self.job + ' | ' + self.location
 
 
+
+
+
+
