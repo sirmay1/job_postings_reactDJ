@@ -17,12 +17,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls import re_path as url  #timeline(11:30)
+from django.conf.urls import *
+#from django.urls import url
 from app.views import *
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", JobsView.as_view(), name="anything"),
+    path("", JobsView.as_view(), name="anything")
 ]
+
 
 
 
